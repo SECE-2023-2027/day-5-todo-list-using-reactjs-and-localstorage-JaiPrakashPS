@@ -42,20 +42,22 @@ const finishTodo = (id) => {
   };
 
 
-  return (
-    <>
+return (
+  <div className="min-h-screen bg-gray-50 py-8 px-4">
+    <div className="max-w-2xl mx-auto">
       <Header />
       <TodoForm addTodo={addTodo} />
       <TodoList
-  todos={todos}
-  deleteTodo={deleteTodo}
-  toggleComplete={toggleComplete}
-  editTodo={editTodo}
-  finishTodo={finishTodo} // ADD THIS
-/>
+        todos={todos}
+        deleteTodo={deleteTodo}
+        toggleComplete={toggleComplete}
+        editTodo={editTodo}
+        finishTodo={finishTodo}
+      />
+    </div>
+  </div>
+);
 
-    </>
-  );
 }
 
 export default App;
