@@ -1,0 +1,43 @@
+.todo-item {
+  background: #f0f0f0;
+  margin: 10px auto;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.todo-item span {
+  flex: 1;
+  cursor: pointer;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.todo-item.finished {
+  background-color: #e8f5e9;
+  border: 2px solid #4caf50;
+}
+
+.finished-label {
+  color: #2e7d32;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.actions button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  background: #1976d2;
+  color: white;
+  cursor: pointer;
+}
+
+.actions button:last-child {
+  background: #d32f2f;
+}
